@@ -2,6 +2,7 @@
 import React from 'react';
 import SendMessages from './components/SendMessages';
 import TemplateCreation from './components/templateCreation';
+import FileUploader from './components/fileUploader';
 import {
   BrowserRouter as Router,
   Routes,
@@ -26,6 +27,7 @@ const App = () => {
           </div>} />
           <Route path="/sendMessages" element = {<SendMessages />} ></Route>
           <Route path="/templateCreation" element = {<TemplateCreation />} ></Route>
+          <Route path = "/fileUpload" element = { <FileUploader /> } ></Route>
         </Routes>
 
     </Router>
